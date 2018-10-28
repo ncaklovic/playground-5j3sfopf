@@ -4,13 +4,14 @@ This C++ template lets you get started quickly with a simple one-page playground
 
 ```C++ runnable
 #include <iostream>
+#include <iterator>
+#include <numeric>
 
 using namespace std;
 
 int main() 
 {
-    cout << "Hello, World!";
-    return 0;
+    cout << std::accumulate(istream_iterator<double>(cin), istream_iterator<double>(), 0.);
 }
 ```
 
